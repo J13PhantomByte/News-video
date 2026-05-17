@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>My Looping Video</title>
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      min-height: 100vh;
+      background: #000;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-family: Arial, sans-serif;
+    }
+
+    .video-wrapper {
+      width: 100%;
+      max-width: 1000px;
+      padding: 16px;
+    }
+
+    video {
+      width: 100%;
+      height: auto;
+      border-radius: 16px;
+      display: block;
+      background: #000;
+    }
+
+    @media (max-width: 600px) {
+      .video-wrapper {
+        padding: 8px;
+      }
+
+      video {
+        border-radius: 10px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="video-wrapper">
+    <video 
+      src="GWEP UAS  KEL3.mp4" 
+      autoplay 
+      muted 
+      loop 
+      playsinline 
+      controls>
+    </video>
+  </div>
+
+</body>
+</html>
